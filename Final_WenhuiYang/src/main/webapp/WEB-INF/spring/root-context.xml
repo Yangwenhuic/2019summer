@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="courseDao" class="com.neu.myapp.dao.CourseDao" />
+	<bean id="studentDao" class="com.neu.myapp.dao.StudentDao" />
+ 	<bean id="accountDao" class="com.neu.myapp.dao.AccountDao" />
+	<bean id="advisorDao" class="com.neu.myapp.dao.AdvisorDao" />
+	<bean id="coursevalidator" class="com.neu.myapp.validator.CourseValidator" />
+	<bean id="accountvalidator" class="com.neu.myapp.validator.AccountValidator" />
+	<bean id="studentvalidator" class="com.neu.myapp.validator.StudentValidator" />
+	<bean id="advisorvalidator" class="com.neu.myapp.validator.AdvisorValidator" />
+</beans>
